@@ -1,3 +1,223 @@
-body {
-    background-color: red;
+@import "variables.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+header {
+    height: 75px;
+
+    .left {
+        width: 50%;
+        float: left;
+        height: 75px;
+    }
+
+    .tb .logo {
+        background-image: url("https://teambit.io/wp-content/themes/teambeat/img/logo.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 110px;
+        height: 35px;
+        position: absolute;
+    }
+
+    .right {
+        width: 50%;
+        float: right;
+        height: 75px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .tb {
+        position: relative;
+        margin-left: 30px;
+        margin-top: 20px;
+        font-size: 25px;
+        color: $brand_primary;
+    }
+
+    ul {
+        list-style-type: none;
+        color: $brand_primary;
+    }
+
+    .menu ul {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .btn {
+        border: 1px solid #30488f;
+        color: #30488f;
+        border-radius: 7px;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 6px 10px;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+    }
+
+    .menu ul li a i {
+        margin-left: 3px;
+        font-size: 10px;
+    }
+}
+
+hr {
+    margin-bottom: 40px;
+    color: $brand_primary;
+}
+
+main {
+    height: 650px;
+
+    .written-left {
+        float: left;
+        width: 50%;
+        text-align: center;
+
+        .container-written {
+            position: relative;
+
+            .writtenp {
+                margin-bottom: 40px;
+                line-height: 1.5;
+                color: $brand_primary;
+                font-size: 35px;
+            }
+
+            .writtenh1 {
+                margin-bottom: 30px;
+                font-size: 65px;
+                line-height: 1.4;
+                color: $brand_primary;
+            }
+
+            .form {
+                line-height: 2;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                button {
+                    margin-right: 5px;
+                    margin-left: 5px;
+                    height: 35px;
+                    line-height: 35px;
+                    padding: 0 20px;
+                    color: #fff;
+                    background: #30488f;
+                    border-radius: 7px;
+                }
+            }
+        }
+
+        .menu-link {
+            position: absolute;
+            left: 100px;
+            text-decoration: none;
+            color: $brand_primary;
+            margin-top: 10px;
+        }
+    }
+
+    .written-right {
+        float: right;
+        width: 50%;
+
+        img {
+            width: 94%;
+            height: 470px;
+        }
+    }
+}
+
+.main2 {
+    width: 100%;
+    background-color: #ffe7d2;
+    padding-top: 120px;
+    height: 1100px;
+
+    .p1 {
+        text-align: center;
+
+        .title1 {
+            color: $brand_primary;
+            font-size: 26px;
+            line-height: 1.533334;
+        }
+    }
+
+    .p2 {
+        margin-left: 250px;
+        margin-right: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .p2-container1 {
+            img {
+                width: 150px;
+                height: 80px;
+                margin-bottom: 40px;
+            }
+            display: flex;
+            flex-direction: column;
+        }
+
+        .p2-container2 {
+            img {
+                width: 150px;
+                height: 96px;
+                margin-bottom: 25px;
+            }
+            display: flex;
+            flex-direction: column;
+        }
+
+        .p2-container3 {
+            img {
+                width: 150px;
+                height: 95px;
+                margin-bottom: 26px;
+            }
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .p3 {
+        margin-top: 100px;
+        margin-left: 600px;
+        margin-right: 500px;
+        width: 30%;
+        margin-bottom: 40px;
+        img {
+            max-width: 280px;
+        }
+
+        .final-title {
+            margin-top: 110px;
+            font-size: 26px;
+            line-height: 1.4;
+            color: $brand_primary;
+        }
+    }
 }
